@@ -1,0 +1,21 @@
+//
+//  ZHPrefixHeader.pch
+//  ZHAVPlayerOne
+//
+//  Created by zhanghua0221 on 17/1/12.
+//  Copyright © 2017年 zhanghua0221. All rights reserved.
+//
+#ifndef ZHPrefixHeader_pch
+#define ZHPrefixHeader_pch
+
+#import <AVFoundation/AVFoundation.h>
+
+#define COLORFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000)>>16))/255.0 green:((float)((rgbValue & 0xFF00)>>8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define SC_WIDTH   [UIScreen mainScreen].bounds.size.width
+#define SC_HEIGHT  [UIScreen mainScreen].bounds.size.height
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ZHPrefixHeader_pch */
