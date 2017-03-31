@@ -257,7 +257,7 @@
 }
 -(void)dealloc{
     //移除监听（观察者）
-    
+    NSLog(@"我就是试试");
     [self.myPlayerItem  removeObserver:self forKeyPath:@"status"];
 }
 
