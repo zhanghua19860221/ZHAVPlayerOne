@@ -257,6 +257,8 @@
 }
 -(void)dealloc{
     //移除监听（观察者）
+    //移除监听（观察者）
+
     [self.myPlayerItem  removeObserver:self forKeyPath:@"status"];
 }
 
